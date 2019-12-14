@@ -8,10 +8,12 @@
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <i class="material-icons navbar-brand text-white bg-primary rounded-pill" id='icon'>attach_money</i>
         <h2 class="text-white">Currency Converter</h2>
     </nav>
+    <!-- Currency 1 input -->
     <div class="container my-5">
         <h3>Enter the amount of Currency here</h3>
         <div class="input-group">
@@ -21,7 +23,7 @@
             </select>
         </div>
     </div>
-
+    <!-- Currency 2 input -->
     <div class="container my-5">
         <h3>Convert into...</h3>
         <div>
@@ -30,13 +32,12 @@
             </select>
         </div>
     </div>
+    <!-- Submit button -->
     <div class="container">
         <div class="btn btn-primary" id="conv">Convert</div>
     </div>
 
-    <!-- <div class="container col-2 my-5 text-center">
-        <div class="display-4 text-dark font-weight-bold" id='show'></div>
-    </div> -->
+    <!-- Division to display the converted currencies along with their respective flags -->
     <div class="d-flex flex-row m-4" id='displayContent'>
         <div class="col-5 ml-4 text-center">
             <img src="" id='img1'>
@@ -48,6 +49,7 @@
             <div class="display-4 text-dark font-weight-bold" id='show'></div>
         </div>
     </div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>

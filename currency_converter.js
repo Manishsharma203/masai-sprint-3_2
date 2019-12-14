@@ -29,9 +29,10 @@ function convert() {
                     var out1= response3.quotes[key]
                 }
             }
-            var output = (out1/out0)*($('#num0').val())
+            var number= Math.abs($('#num0').val())
+            var output = (out1/out0)*(number)
             $('#show').text(output.toFixed(3)+' '+$(selC1).val())
-            $('#show1').text($('#num0').val()+' '+$(selC0).val())
+            $('#show1').text(number+' '+$(selC0).val())
 
         //showing flags according to the currency
         $.ajax({
